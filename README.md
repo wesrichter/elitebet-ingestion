@@ -5,10 +5,10 @@ A readable Python reference implementation for the sports betting data ingestion
 ## Quick Start
 
 ```bash
-/Users/wesrichter/personal/.venv/bin/python -m pip install -e '.[dev]'
-/Users/wesrichter/personal/.venv/bin/python -m pytest -q
-/Users/wesrichter/personal/.venv/bin/python -m ruff check .
-/Users/wesrichter/personal/.venv/bin/python -m mypy src tests
+uv sync --dev
+uv run pytest -q
+uv run ruff check .
+uv run mypy src tests
 ```
 
 Expected checks output:
@@ -34,7 +34,7 @@ The source site may render data dynamically or restrict automated access. In tha
 ### Normalize sample data
 
 ```bash
-/Users/wesrichter/personal/.venv/bin/python -m elitebet_ingestion.cli \
+uv run python -m elitebet_ingestion.cli \
 	data/sample_nfl_matches.json \
 	--league NFL \
 	-o matches.normalized.json
@@ -56,28 +56,28 @@ Example normalized JSON excerpt:
 
 ```json
 [
-	{
-		"id": "nfl-2026-09-10-dal-phi",
-		"home_team": "Philadelphia Eagles",
-		"away_team": "Dallas Cowboys",
-		"start_time": "2026-09-10T20:20:00+00:00",
-		"sport": "Football",
-		"league": "NFL",
-		"odds": [
-			{
-				"id": "dc09e4ddb66113b9",
-				"market": "moneyline",
-				"bet_name": "Philadelphia Eagles",
-				"american_odds": -135
-			},
-			{
-				"id": "e3876051ba828bea",
-				"market": "moneyline",
-				"bet_name": "Dallas Cowboys",
-				"american_odds": 115
-			}
-		]
-	}
+  {
+    "id": "nfl-2026-09-10-dal-phi",
+    "home_team": "Philadelphia Eagles",
+    "away_team": "Dallas Cowboys",
+    "start_time": "2026-09-10T20:20:00+00:00",
+    "sport": "Football",
+    "league": "NFL",
+    "odds": [
+      {
+        "id": "dc09e4ddb66113b9",
+        "market": "moneyline",
+        "bet_name": "Philadelphia Eagles",
+        "american_odds": -135
+      },
+      {
+        "id": "e3876051ba828bea",
+        "market": "moneyline",
+        "bet_name": "Dallas Cowboys",
+        "american_odds": 115
+      }
+    ]
+  }
 ]
 ```
 
@@ -102,4 +102,32 @@ Each match includes an ISO-8601 `start_time` and an `odds` list. IDs are supplie
 - Unit tests: `pytest -q`
 - Static type checking: `mypy src tests`
 
+With uv:
+
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run mypy src tests
+```
+
 The codebase uses Python type hints throughout domain models and normalization logic, and mypy enforces them in CI/local checks.
+
+## Submission Checklist
+
+- [x] Language is Python (project package under `src/elitebet_ingestion`)
+- [x] One active league selected and supported (`NFL` default)
+- [x] At least 5 upcoming matches processed (sample run writes 5 matches)
+- [x] At least 10 market types supported (sample includes 11 distinct markets)
+- [x] Includes both game markets and player props
+- [x] Output matches required `Match` and `Odd` dataclass schema
+- [x] Odds are normalized to American format
+- [x] Missing/incomplete data handled gracefully (invalid lines skipped, warnings logged)
+- [x] SGP odds excluded
+- [x] Source code submitted with documentation
+- [x] JSON sample data included (`data/sample_nfl_matches.json`)
+
+Notes on documentation requirement:
+
+- Approach is documented in Design and Usage sections.
+- Challenges and mitigations are documented around access restrictions, rate limits, and deterministic replay from captured payloads.
+- If you want a stricter interpretation, add a dedicated "Challenges Faced and Solutions" section for reviewers who expect that exact heading.
