@@ -1,0 +1,34 @@
+match_id,home_team,away_team,start_time,sport,league,odd_id,market,bet_name,american_odds
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,dc09e4ddb66113b9,moneyline,Philadelphia Eagles,-135
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,e3876051ba828bea,moneyline,Dallas Cowboys,115
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,a75367be5a014ee9,spread,Philadelphia Eagles -2.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,54886b80d5850d20,spread,Dallas Cowboys +2.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,6ee55ea78a1c638b,total,Over 47.5,-105
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,f3d8e178ba68a4ae,total,Under 47.5,-115
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,bfc510a3fa702880,team_total,Philadelphia Eagles Over 24.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,5ff4312729169b8c,player_passing_yards,Dak Prescott Over 265.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,7ed51f1e851e92f1,player_passing_tds,Jalen Hurts Over 1.5,105
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,ee82e8a98e52ac96,player_rushing_yards,Jalen Hurts Over 34.5,-115
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,c7f2e6a60e14bc5c,player_receiving_yards,CeeDee Lamb Over 85.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,ecaed4d127f189e3,player_receptions,A.J. Brown Over 5.5,-120
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,8045826b237b9190,player_anytime_td,Saquon Barkley Anytime Touchdown,-125
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,67f6f0b9419e6263,first_half_total,Over 23.5,-110
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,3e624846d8795319,moneyline,Kansas City Chiefs,-120
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,b8105130ed8a0b7f,moneyline,Baltimore Ravens,100
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,14b712f3722e9d08,spread,Baltimore Ravens +1.5,-110
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,e83aa91f10e3d45f,total,Over 49.5,-110
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,1632124aac3e9238,player_passing_yards,Patrick Mahomes Over 285.5,-105
+nfl-2026-09-13-kc-bal,Kansas City Chiefs,Baltimore Ravens,2026-09-13T20:25:00+00:00,Football,NFL,338bcc06e1de1dd3,player_rushing_yards,Lamar Jackson Over 45.5,-110
+nfl-2026-09-14-det-gb,Green Bay Packers,Detroit Lions,2026-09-14T20:15:00+00:00,Football,NFL,0730f565efff6ff7,moneyline,Green Bay Packers,-105
+nfl-2026-09-14-det-gb,Green Bay Packers,Detroit Lions,2026-09-14T20:15:00+00:00,Football,NFL,47a0962eff4086a4,moneyline,Detroit Lions,-115
+nfl-2026-09-14-det-gb,Green Bay Packers,Detroit Lions,2026-09-14T20:15:00+00:00,Football,NFL,09a7b1a5787636fa,spread,Detroit Lions -1.5,-110
+nfl-2026-09-14-det-gb,Green Bay Packers,Detroit Lions,2026-09-14T20:15:00+00:00,Football,NFL,79ee0ef4b7c529ac,team_total,Detroit Lions Over 27.5,-110
+nfl-2026-09-14-det-gb,Green Bay Packers,Detroit Lions,2026-09-14T20:15:00+00:00,Football,NFL,3212cbeadd825098,player_receiving_yards,Amon-Ra St. Brown Over 76.5,-110
+nfl-2026-09-17-sf-sea,Seattle Seahawks,San Francisco 49ers,2026-09-17T20:15:00+00:00,Football,NFL,94acd5ceeb213beb,moneyline,Seattle Seahawks,105
+nfl-2026-09-17-sf-sea,Seattle Seahawks,San Francisco 49ers,2026-09-17T20:15:00+00:00,Football,NFL,8fad17696369bd4a,moneyline,San Francisco 49ers,-125
+nfl-2026-09-17-sf-sea,Seattle Seahawks,San Francisco 49ers,2026-09-17T20:15:00+00:00,Football,NFL,dc933c78290f7a16,total,Under 43.5,-110
+nfl-2026-09-17-sf-sea,Seattle Seahawks,San Francisco 49ers,2026-09-17T20:15:00+00:00,Football,NFL,42d254561bcf5e08,player_anytime_td,Christian McCaffrey Anytime Touchdown,-130
+nfl-2026-09-20-buf-cin,Cincinnati Bengals,Buffalo Bills,2026-09-20T18:00:00+00:00,Football,NFL,ea1b84dc8b342af1,moneyline,Cincinnati Bengals,125
+nfl-2026-09-20-buf-cin,Cincinnati Bengals,Buffalo Bills,2026-09-20T18:00:00+00:00,Football,NFL,7dfe1f0da175b518,moneyline,Buffalo Bills,-145
+nfl-2026-09-20-buf-cin,Cincinnati Bengals,Buffalo Bills,2026-09-20T18:00:00+00:00,Football,NFL,05fc1a830a300104,spread,Buffalo Bills -3.5,-105
+nfl-2026-09-20-buf-cin,Cincinnati Bengals,Buffalo Bills,2026-09-20T18:00:00+00:00,Football,NFL,52f96609f70bd7c6,player_receptions,Ja'Marr Chase Over 6.5,-110

@@ -5,10 +5,11 @@ A readable Python reference implementation for the sports betting data ingestion
 ## Quick Start
 
 ```bash
-uv sync --dev
+uv sync --extra dev
 uv run pytest -q
 uv run ruff check .
 uv run mypy src tests
+uv run pre-commit install
 ```
 
 Expected checks output:
@@ -16,8 +17,9 @@ Expected checks output:
 ```text
 ....                                                                     [100%]
 4 passed in 0.01s
+TOTAL                                       ...     ...   >=85%
 All checks passed!
-Success: no issues found in 6 source files
+Success: no issues found in ... source files
 ```
 
 ## Design
@@ -81,6 +83,26 @@ Example normalized JSON excerpt:
 ]
 ```
 
+### Export CSV from normalized JSON
+
+```bash
+uv run elitebet-export-csv matches.normalized.json -o odds.normalized.csv
+head -n 6 odds.normalized.csv
+```
+
+Example CSV output:
+
+```text
+match_id,home_team,away_team,start_time,sport,league,odd_id,market,bet_name,american_odds
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,dc09e4ddb66113b9,moneyline,Philadelphia Eagles,-135
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,e3876051ba828bea,moneyline,Dallas Cowboys,115
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,a75367be5a014ee9,spread,Philadelphia Eagles -2.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,54886b80d5850d20,spread,Dallas Cowboys +2.5,-110
+nfl-2026-09-10-dal-phi,Philadelphia Eagles,Dallas Cowboys,2026-09-10T20:20:00+00:00,Football,NFL,6ee55ea78a1c638b,total,Over 47.5,-105
+```
+
+A checked-in sample CSV is available at `data/sample_nfl_odds.csv`.
+
 ### Behavior with malformed records
 
 If one match record is invalid (for example missing `away`), the CLI skips that record and continues:
@@ -101,6 +123,8 @@ Each match includes an ISO-8601 `start_time` and an `odds` list. IDs are supplie
 - Formatting/linting: `ruff check .`
 - Unit tests: `pytest -q`
 - Static type checking: `mypy src tests`
+- Coverage threshold: `--cov-fail-under=85`
+- Pre-commit hooks: ruff, ruff-format, mypy, pytest
 
 With uv:
 
@@ -108,6 +132,7 @@ With uv:
 uv run ruff check .
 uv run pytest -q
 uv run mypy src tests
+uv run pre-commit run --all-files
 ```
 
 The codebase uses Python type hints throughout domain models and normalization logic, and mypy enforces them in CI/local checks.
@@ -125,6 +150,7 @@ The codebase uses Python type hints throughout domain models and normalization l
 - [x] SGP odds excluded
 - [x] Source code submitted with documentation
 - [x] JSON sample data included (`data/sample_nfl_matches.json`)
+- [x] CSV sample data included (`data/sample_nfl_odds.csv`)
 
 Notes on documentation requirement:
 

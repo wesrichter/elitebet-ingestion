@@ -17,9 +17,7 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     payload = json.loads(args.input.read_text(encoding="utf-8"))
     records = (
-        payload
-        if isinstance(payload, list)
-        else payload.get("matches", payload.get("data", []))
+        payload if isinstance(payload, list) else payload.get("matches", payload.get("data", []))
     )
     matches = []
     for record in records:
