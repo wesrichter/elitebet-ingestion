@@ -20,6 +20,7 @@ def american_odds(value: Any) -> int:
     text = str(value).strip().replace("−", "-")
     if not text:
         raise ValueError("empty odds value")
+    decimal: float | None
     if "/" in text:
         numerator, denominator = (float(part) for part in text.split("/", 1))
         decimal = 1 + numerator / denominator
