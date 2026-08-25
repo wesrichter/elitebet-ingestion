@@ -1,0 +1,196 @@
+[
+  {
+    "id": "nfl-2026-09-10-dal-phi",
+    "home_team": "Philadelphia Eagles",
+    "away_team": "Dallas Cowboys",
+    "start_time": "2026-09-10T20:20:00Z",
+    "sport": "Football",
+    "odds": [
+      {
+        "market": "moneyline",
+        "bet_name": "Philadelphia Eagles",
+        "american_odds": -135
+      },
+      {
+        "market": "moneyline",
+        "bet_name": "Dallas Cowboys",
+        "american_odds": 115
+      },
+      {
+        "market": "spread",
+        "bet_name": "Philadelphia Eagles -2.5",
+        "american_odds": -110
+      },
+      {
+        "market": "spread",
+        "bet_name": "Dallas Cowboys +2.5",
+        "american_odds": -110
+      },
+      { "market": "total", "bet_name": "Over 47.5", "american_odds": -105 },
+      { "market": "total", "bet_name": "Under 47.5", "american_odds": -115 },
+      {
+        "market": "team_total",
+        "bet_name": "Philadelphia Eagles Over 24.5",
+        "american_odds": -110
+      },
+      {
+        "market": "player_passing_yards",
+        "bet_name": "Dak Prescott Over 265.5",
+        "american_odds": -110
+      },
+      {
+        "market": "player_passing_tds",
+        "bet_name": "Jalen Hurts Over 1.5",
+        "american_odds": 105
+      },
+      {
+        "market": "player_rushing_yards",
+        "bet_name": "Jalen Hurts Over 34.5",
+        "american_odds": -115
+      },
+      {
+        "market": "player_receiving_yards",
+        "bet_name": "CeeDee Lamb Over 85.5",
+        "american_odds": -110
+      },
+      {
+        "market": "player_receptions",
+        "bet_name": "A.J. Brown Over 5.5",
+        "american_odds": -120
+      },
+      {
+        "market": "player_anytime_td",
+        "bet_name": "Saquon Barkley Anytime Touchdown",
+        "american_odds": -125
+      },
+      {
+        "market": "first_half_total",
+        "bet_name": "Over 23.5",
+        "american_odds": -110
+      }
+    ]
+  },
+  {
+    "id": "nfl-2026-09-13-kc-bal",
+    "home_team": "Kansas City Chiefs",
+    "away_team": "Baltimore Ravens",
+    "start_time": "2026-09-13T20:25:00Z",
+    "sport": "Football",
+    "odds": [
+      {
+        "market": "moneyline",
+        "bet_name": "Kansas City Chiefs",
+        "american_odds": -120
+      },
+      {
+        "market": "moneyline",
+        "bet_name": "Baltimore Ravens",
+        "american_odds": 100
+      },
+      {
+        "market": "spread",
+        "bet_name": "Baltimore Ravens +1.5",
+        "american_odds": -110
+      },
+      { "market": "total", "bet_name": "Over 49.5", "american_odds": -110 },
+      {
+        "market": "player_passing_yards",
+        "bet_name": "Patrick Mahomes Over 285.5",
+        "american_odds": -105
+      },
+      {
+        "market": "player_rushing_yards",
+        "bet_name": "Lamar Jackson Over 45.5",
+        "american_odds": -110
+      }
+    ]
+  },
+  {
+    "id": "nfl-2026-09-14-det-gb",
+    "home_team": "Green Bay Packers",
+    "away_team": "Detroit Lions",
+    "start_time": "2026-09-14T20:15:00Z",
+    "sport": "Football",
+    "odds": [
+      {
+        "market": "moneyline",
+        "bet_name": "Green Bay Packers",
+        "american_odds": -105
+      },
+      {
+        "market": "moneyline",
+        "bet_name": "Detroit Lions",
+        "american_odds": -115
+      },
+      {
+        "market": "spread",
+        "bet_name": "Detroit Lions -1.5",
+        "american_odds": -110
+      },
+      {
+        "market": "team_total",
+        "bet_name": "Detroit Lions Over 27.5",
+        "american_odds": -110
+      },
+      {
+        "market": "player_receiving_yards",
+        "bet_name": "Amon-Ra St. Brown Over 76.5",
+        "american_odds": -110
+      }
+    ]
+  },
+  {
+    "id": "nfl-2026-09-17-sf-sea",
+    "home_team": "Seattle Seahawks",
+    "away_team": "San Francisco 49ers",
+    "start_time": "2026-09-17T20:15:00Z",
+    "sport": "Football",
+    "odds": [
+      {
+        "market": "moneyline",
+        "bet_name": "Seattle Seahawks",
+        "american_odds": 105
+      },
+      {
+        "market": "moneyline",
+        "bet_name": "San Francisco 49ers",
+        "american_odds": -125
+      },
+      { "market": "total", "bet_name": "Under 43.5", "american_odds": -110 },
+      {
+        "market": "player_anytime_td",
+        "bet_name": "Christian McCaffrey Anytime Touchdown",
+        "american_odds": -130
+      }
+    ]
+  },
+  {
+    "id": "nfl-2026-09-20-buf-cin",
+    "home_team": "Cincinnati Bengals",
+    "away_team": "Buffalo Bills",
+    "start_time": "2026-09-20T18:00:00Z",
+    "sport": "Football",
+    "odds": [
+      {
+        "market": "moneyline",
+        "bet_name": "Cincinnati Bengals",
+        "american_odds": 125
+      },
+      {
+        "market": "moneyline",
+        "bet_name": "Buffalo Bills",
+        "american_odds": -145
+      },
+      {
+        "market": "spread",
+        "bet_name": "Buffalo Bills -3.5",
+        "american_odds": -105
+      },
+      {
+        "market": "player_receptions",
+        "bet_name": "Ja'Marr Chase Over 6.5",
+        "american_odds": -110
+      }
+    ]
+  }
+]
