@@ -17,7 +17,7 @@ Expected checks output:
 ....                                                                     [100%]
 4 passed in 0.01s
 All checks passed!
-Success: no issues found in 5 source files
+Success: no issues found in 6 source files
 ```
 
 ## Design
